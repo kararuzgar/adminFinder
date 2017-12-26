@@ -15,7 +15,7 @@ import webbrowser as w
 class Admin:
     def __init__(self):
         self.window = Tk()
-        self.window.title("Admin Finder")
+        self.window.title("n0t3py - Admin Finder")
         self.window.geometry("400x400")
         self.window.resizable(width=FALSE, height=FALSE)
         self.window.protocol("WM_DELETE_WINDOW", self.close)
@@ -25,9 +25,9 @@ class Admin:
         self.logoBar = Frame(self.window)
         self.logoBar.pack(side = BOTTOM)
 
-        self.github = Label(self.logoBar,text = "http://github.com/notesoftware")
+        self.github = Label(self.logoBar,text = "http://github.com/n0t3py")
         self.github.pack(side = LEFT)
-        self.github.bind("<Button-1>",lambda event = None:w.open_new_tab("http://github.com/notesoftware"))
+        self.github.bind("<Button-1>",lambda event = None:w.open_new_tab("http://github.com/n0t3py"))
         self.github.bind("<Enter>",lambda event = None:self.github.config(cursor="hand2"))
         self.website = Label(self.logoBar,text = "https://savecoder.blogspot.com")
         self.website.pack(side = RIGHT)
